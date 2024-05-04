@@ -39,21 +39,7 @@ function isInViewport(element) {
     );
   }
   
-  // Function to handle scrolling and check if element is in viewport
-  function handleScroll() {
-    const elements = document.querySelectorAll('.text-animation');
-    elements.forEach(element => {
-      if (isInViewport(element)) {
-        element.classList.add('animate'); // Add class to trigger animation
-      }
-    });
-  }
-  
-  // Add event listener for scrolling
-  document.addEventListener('scroll', handleScroll);
-  
-  // Initial check for elements in viewport when the page loads
-  document.addEventListener('DOMContentLoaded', handleScroll);
+
   // Function to check if an element is in the viewport
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();

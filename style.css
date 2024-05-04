@@ -68,7 +68,7 @@ body{
   cursor: pointer;
 }
 .parallax {
-  background-image: url("imgs/para2.jpg");
+  background-image: url("imgs/parallax2.jpg");
   min-height: 400px;
   background-attachment: fixed;
   background-position: center;
@@ -96,7 +96,7 @@ body{
     font-size: 18px;
     color: black;
     display: block;
-    background-color: #dee5d386;
+    background-color: #ffffff86;
     margin-bottom: 1px;
     margin-right: 20px;
     transition: 0.3s;
@@ -130,8 +130,12 @@ body{
 ::-webkit-scrollbar{
   display:none ;
 }
+.cardmp:hover{
+  transform: scale(1.1);
+}
 .cardmp:hover .cardmb {
-  bottom: 0%;
+  bottom: 0;
+  
 }
 
 .cardmb {
@@ -139,33 +143,22 @@ body{
   height: 100%;
   bottom:-100% ;
   position: absolute;
-  background-color: #ffffff6b;
+  background: rgba(255, 255, 255, 0.338);
   backdrop-filter: blur(5px);
   padding: 10px;
   color: black;
-  transition: bottom 1.5s;
-  display: inline-block;
-  animation: cardAnimation 0.5s ease-out forwards;
+  transition: bottom 1s; /* Changed transition property to only affect 'right' */
 }
 
 .cardmp {
   overflow: hidden;
   position: relative;
+  transition: 1s;
 }
 .card-imgmp {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.text-animation {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-
-.text-animation.animate {
-  opacity: 1;
 }
 .rounded-image {
   width: 300px;
@@ -225,7 +218,7 @@ body{
   background-color: rgba(0, 0, 0, 0.5); 
 }
 .parallaxi {
-  background-image: url("imgs/itembg.jpg");
+  background-image: url("imgs/cam1.jpg");
   min-height: 400px;
   background-attachment: fixed;
   background-position: center;
@@ -248,4 +241,83 @@ body{
 
 .cardmp:hover {
   transform: translateY(-5px); /* You can adjust the value as needed */
+}
+.cards{
+  transition: 1s;
+  
+}
+.cards:hover{
+  transform: scale(1.3);
+  z-index: 2;
+}
+
+.cards:hover .cardsb {
+  opacity: 1;
+}
+
+.cardsb {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; /* Added left: 0 to ensure the content starts from the left */
+  opacity: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.338);
+  backdrop-filter: blur(5px);
+  padding: 10px;
+  color: black;
+  transition: opacity .5s; /* Changed transition to only affect 'transform' */
+}
+.cards {
+  overflow: hidden;
+  position: relative;
+}
+.cimg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.q{
+  font-weight: 500;
+  color: #e1b382;
+}
+.d2h{
+  color: #e1b382;
+  font-size: 4rem;
+  font-weight: 600;
+  padding: 0;
+  margin-top: 20px;
+}
+.d2p{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  justify-content: center;
+}
+.about1:hover {
+  background-color: #000000;
+  transition-delay: 0.4s;
+  
+}
+.about1 {
+  background-color: rgba(0, 0, 0, 0.479);
+  transition: background-color 1.2s ;
+}
+.gap{
+  width: 100%;
+  height: 100vh;
+}
+.wc{
+  color: #e1b382;
+}
+.about2:hover {
+  background-color: #000000b5;
+  transition-delay: 0.4s;
+  
+}
+.about2 {
+  background-color: rgba(0, 0, 0, 0.479);
+  transition: background-color 1.2s ;
 }
